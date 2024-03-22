@@ -1,6 +1,6 @@
-from menu import custom_menu
+from menu import unauthenticated_menu
 import streamlit as st
 
 st.write("# Active Learning 🏃🏽‍♀️")
 
-custom_menu()
+unauthenticated_menu()
