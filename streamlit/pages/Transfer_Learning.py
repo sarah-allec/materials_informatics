@@ -9,14 +9,11 @@ import plotly.graph_objects as go
 from plotting import format_figure
 import os
 
-wd = os.getcwd()
-par_d = os.path.abspath(os.path.join(wd, os.pardir))
-
 st.write("# Transfer Learning 🤝🏼")
 
 # Data & ML
-expt_gap_df = pd.read_csv(f'{par_d}/data/matbench_expt_gap_featurized.csv')
-theor_gap_df = pd.read_csv(f'{par_d}/data/matbench_mp_gap_featurized.csv')
+expt_gap_df = pd.read_csv(f'data/matbench_expt_gap_featurized.csv')
+theor_gap_df = pd.read_csv(f'data/matbench_mp_gap_featurized.csv')
 
 conductors_expt = expt_gap_df[ expt_gap_df['gap expt'] < 0.1 ]
 semiconductors_expt = expt_gap_df[ (expt_gap_df['gap expt'] > 0.1) & (expt_gap_df['gap expt'] < 5) ]
