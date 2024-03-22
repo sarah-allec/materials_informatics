@@ -52,7 +52,7 @@ st.plotly_chart(fig, theme=None, use_container_width=True)
 st.write("### Transfer learning")
 st.write("Transfer learning is a machine learning (ML) approach where knowledge gained from a pre-trained model is used in the training of another model. Usually the pre-trained model is trained on a higher quality or more general dataset, and the target model is trained on a lower quality or more specific dataset. The goal is usually to *speed up and/or improve learning on the target task*. There are many transfer learning methods; here, I explore two: i) a :violet[latent variable (LV)] approach, where the output of the pre-trained model is used as an input feature to the target model, and ii) a :violet[fine-tuning (FT)] approach, where some optimized parameters of the pre-trained model are used to initialize the parameters of the target model.") 
 
-st.image('pre-trained model.svg')
+st.image(f'{path}/pre-trained model.svg')
 
 # Approach
 st.write("## Approach")
