@@ -24,11 +24,11 @@ expt_gap_df['type'] = ['conductor']*len(expt_gap_df)
 expt_gap_df.loc[semiconductors_expt.index, 'type'] = ['semiconductor']*len(semiconductors_expt)
 expt_gap_df.loc[insulators_expt.index, 'type'] = ['insulator']*len(insulators_expt)
 
-no_tl_pred_df = pd.read_csv('no_tl_expt_gap_pred_lv.csv')
+no_tl_pred_df = pd.read_csv(f'{path}/no_tl_expt_gap_pred_lv.csv')
 y_true_no_tl_lv = no_tl_pred_df.y_true
 y_pred_no_tl_lv = no_tl_pred_df.y_pred
 
-tl_pred_df = pd.read_csv('tl_expt_gap_pred_lv.csv')
+tl_pred_df = pd.read_csv(f'{path}/tl_expt_gap_pred_lv.csv')
 y_true_tl_lv = tl_pred_df.y_true
 y_pred_tl_lv = tl_pred_df.y_pred
 
