@@ -12,8 +12,8 @@ import os
 st.write("# Transfer Learning 🤝🏼")
 
 # Data & ML
-expt_gap_df = pd.read_csv(f'data/matbench_expt_gap_featurized.csv')
-theor_gap_df = pd.read_csv(f'data/matbench_mp_gap_featurized.csv')
+expt_gap_df = pd.read_csv('matbench_expt_gap_featurized.csv')
+theor_gap_df = pd.read_csv('matbench_mp_gap_featurized.csv')
 
 conductors_expt = expt_gap_df[ expt_gap_df['gap expt'] < 0.1 ]
 semiconductors_expt = expt_gap_df[ (expt_gap_df['gap expt'] > 0.1) & (expt_gap_df['gap expt'] < 5) ]
