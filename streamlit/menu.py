@@ -1,6 +1,6 @@
 import streamlit as st
 
-def unauthenticated_menu():
+def custom_menu():
     # Show a navigation menu for unauthenticated users
     st.sidebar.page_link("Materials_Informatics.py", label="Home 🏠")
     st.sidebar.page_link("pages/Transfer_Learning.py", label="Transfer Learning 🤝")
