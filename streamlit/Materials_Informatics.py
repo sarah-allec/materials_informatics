@@ -1,15 +1,5 @@
 from menu import unauthenticated_menu
 import streamlit as st
-from st_pages import Page, show_pages, add_page_title
-
-#show_pages(
-#    [
-#        Page("Materials_Informatics.py", "Materials Informatics", "🏠"),
-#        Page("pages/Transfer_Learning.py", "Transfer Learning", "🤝")
-#    ]
-#)
-#
-#add_page_title(layout="wide")
 
 st.write("# Materials Informatics Portfolio")
 

@@ -7,7 +7,6 @@ from plotly.subplots import make_subplots
 import plotly.express as px
 import plotly.graph_objects as go
 from plotting import format_figure
-from st_pages import Page, show_pages, add_page_title
 import os
 
 wd = os.getcwd()
