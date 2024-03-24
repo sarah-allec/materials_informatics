@@ -9,6 +9,12 @@ import plotly.graph_objects as go
 from plotting import format_figure
 from pathlib import Path
 
+st.set_page_config(
+    page_title="Transfer Learning",
+    page_icon="🤝🏼",
+    layout="wide",
+)
+
 st.write("# Transfer Learning 🤝🏼")
 
 path = Path(__file__).parents[1]
