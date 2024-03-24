@@ -19,7 +19,7 @@
 This repository contains both <a href="notebooks">Jupyter notebooks</a> for each materials informatics technique and the <a href="streamlit">source code</a> for my <a href="[notebooks](https://materials-informatics.streamlit.app/)">personal portfolio</a>. 
 
 ## Background
-Materials informatics is the application of data science and informatics techniques, including artificial intelligence and machine learning, to better understand and design materials. There are many aspects of materials science and engineering that make the application of these techniques unique and in many cases different than mainstream data science. Much of this uniqueness is due to the nature of materials-related datasets.
+*Materials informatics* is the application of data science and informatics techniques, including artificial intelligence and machine learning, to better understand and design materials. There are many aspects of materials science and engineering that make the application of these techniques unique and in many cases different than mainstream data science. Much of this uniqueness is due to the nature of materials-related datasets, which tend to be some combination of small, sparse, biased, clustered, and low quality.
 
 ## Techniques
 
