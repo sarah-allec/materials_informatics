@@ -7,7 +7,7 @@ This repository holds i) a variety of [Jupyter notebooks](notebooks) for a varie
 <p align="center">
   <a href="#key-features">Introduction</a> •
   <a href="#how-to-use">Techniques</a> •
-  <a href="#how-to-use">Usage</a> •
+  <a href="#how-to-use">Usage</a>
 </p>
 
 ## Introduction
