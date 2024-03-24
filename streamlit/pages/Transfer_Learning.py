@@ -46,7 +46,7 @@ fig.update_layout(
     xaxis_title="Experimental band gap (eV)"
 )
 format_figure(fig)
-fig.update_traces(marker_line_width=1,marker_line_color="#F2CEE6")
+fig.update_traces(marker_line_width=1,marker_line_color="white")
 st.plotly_chart(fig, theme=None, use_container_width=True)
 
 st.write("### Transfer learning")
@@ -84,7 +84,7 @@ fig.update_layout(
     xaxis_title="Band gap (eV)"
 )
 format_figure(fig)
-fig.update_traces(marker_line_width=1,marker_line_color="#F2CEE6")
+fig.update_traces(marker_line_width=1,marker_line_color="white")
 st.plotly_chart(fig, theme=None, use_container_width=True)
 
 st.write(" The parity plot below shows the accuracy improvement as a result of transfer learning, where the yellow circles are the transfer-learned predictions and the sky blue circles are the original (non-transfer-learned) predictions. In particular, the coefficient of determination for non-metal band gap prediction has now increased from 0.70 in the original model to 0.87 and the mean absolute error for non-metal band gap prediction has decreased from 0.5 eV to 0.4 eV.")
