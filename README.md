@@ -1,6 +1,6 @@
 <h1 align="center">Materials Informatics</h1>
 
-This repository holds a variety of `python` notebooks for materials informatics, which is the application of machine learning to materials science (for a good introduction, see <a href="https://towardsdatascience.com/getting-started-in-materials-informatics-41ee34d5ccfe" target="_blank">here</a>). To install the required packages needed to run the notebooks:
+This repository holds i) a variety of [Jupyter notebooks](notebooks) for a variety of toy examples of materials informatics techniques, as well as ii) the [source code](streamlit) for a [Streamlit web app portfolio](https://materials-informatics.streamlit.app/).
 
 ```sh
 pip install -r requirements.txt
