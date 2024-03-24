@@ -5,7 +5,7 @@
 This repository holds i) a variety of [Jupyter notebooks](notebooks) for a variety of toy examples of materials informatics techniques, as well as ii) the [source code](streamlit) for my [personal portfolio](https://materials-informatics.streamlit.app/).
 
 <p align="center">
-    <img src="https://github.com/sarah-allec/materials_informatics/img/streamlit.png" alt="portfolio"/>
+    <img src="https://github.com/sarah-allec/materials_informatics/blob/main/img/streamlit.png?raw=true" alt="portfolio"/>
 </p>
 
 <p align="center">
