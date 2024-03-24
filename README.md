@@ -3,7 +3,8 @@
 <h4 align="center">A collection of toy examples of various materials informatics techniques.</h4>
 
 <p align="center">
-  <a href="#key-features">Introduction</a> •
+  <a href="#key-features">About</a> •
+  <a href="#key-features">Background</a> •
   <a href="#how-to-use">Techniques</a> •
   <a href="#how-to-use">Usage</a>
 </p>
@@ -14,8 +15,10 @@
     </a>
 </p>
 
-## Introduction
+## About
 This repository contains both <a href="notebooks">Jupyter notebooks</a> for each materials informatics technique and the <a href="streamlit">source code</a> for my <a href="[notebooks](https://materials-informatics.streamlit.app/)">personal portfolio</a>.
+
+## Background
 
 ## Techniques
 
