@@ -1,4 +1,4 @@
-<h1 align="center">Materials Informatics</h1>
+<h1 align="center">✨ Materials Informatics ✨</h1>
 
 <h4 align="center">A collection of toy examples of various materials informatics techniques.</h4>
 
