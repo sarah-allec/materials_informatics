@@ -24,7 +24,7 @@ conn = st.connection('gcs', type=FilesConnection)
 expt_gap_df = conn.read("materials_informatics_portfolio/matbench_expt_gap_featurized.csv", input_format="csv", ttl=600)
 theor_gap_df = conn.read("materials_informatics_portfolio/matbench_mp_gap_featurized.csv", input_format="csv", ttl=600)
 no_tl_pred_df = conn.read("materials_informatics_portfolio/no_tl_expt_gap_pred_lv.csv", input_format="csv", ttl=600)
-tl_pred_df = conn.read("materials_informatics_portfolio/tl_expt_gap_pred_lv.csv", input_format="csv", ttl=600))
+tl_pred_df = conn.read("materials_informatics_portfolio/tl_expt_gap_pred_lv.csv", input_format="csv", ttl=600)
 
 conductors_expt = expt_gap_df[ expt_gap_df['gap expt'] < 0.1 ]
 semiconductors_expt = expt_gap_df[ (expt_gap_df['gap expt'] > 0.1) & (expt_gap_df['gap expt'] < 5) ]
