@@ -8,5 +8,5 @@ st.set_page_config(
 )
 
 st.write("# Physics-Informed Learning ⚛️")
-
+st.write("## Coming soon! 🚧")
 unauthenticated_menu()

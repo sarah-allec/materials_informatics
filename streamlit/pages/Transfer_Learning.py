@@ -114,7 +114,8 @@ fig.update_traces(marker=dict(size=10, symbol='circle-open', line=dict(width=1.5
 
 st.plotly_chart(fig, theme=None, use_container_width=True)
 
-#st.write("### Fine-Tuning Approach")
+st.write("### Fine-Tuning Approach")
+st.write("Coming soon! 🚧")
 #st.write("For the :violet[FT] approach, I will be utilizing NNs instead of RFs because :violet[FT] requires the sharing of optimized hyperparameters between models, but RF typically does not require any sort of hyperparameter tuning. This hyperparameter tuning process is what allows for significant flexibility in the types of relationships NNs can learn, and thus the knowledge that a NN learns is encoded in its hyperparameters. All NN models here were built with  <a href='https://pytorch.org/' target='_blank'>`pytorch`</a>.", unsafe_allow_html=True) 
 
 unauthenticated_menu()
