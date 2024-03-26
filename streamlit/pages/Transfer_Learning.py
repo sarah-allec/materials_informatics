@@ -1,5 +1,6 @@
 from menu import unauthenticated_menu
 from sklearn.metrics import r2_score, mean_absolute_error
+from st_files_connection import FilesConnection
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -19,8 +20,11 @@ st.write("# Transfer Learning 🤝🏼")
 
 path = Path(__file__).parents[1]
 # Data & ML
-expt_gap_df = pd.read_csv(f'{path}/matbench_expt_gap_featurized.csv')
-theor_gap_df = pd.read_csv(f'{path}/matbench_mp_gap_featurized.csv')
+conn = st.connection('gcs', type=FilesConnection)
+expt_gap_df = conn.read("materials_informatics_portfolio/matbench_expt_gap_featurized.csv", input_format="csv", ttl=600)
+theor_gap_df = conn.read("materials_informatics_portfolio/matbench_mp_gap_featurized.csv", input_format="csv", ttl=600)
+no_tl_pred_df = conn.read("materials_informatics_portfolio/no_tl_expt_gap_pred_lv.csv", input_format="csv", ttl=600)
+tl_pred_df = conn.read("materials_informatics_portfolio/tl_expt_gap_pred_lv.csv", input_format="csv", ttl=600))
 
 conductors_expt = expt_gap_df[ expt_gap_df['gap expt'] < 0.1 ]
 semiconductors_expt = expt_gap_df[ (expt_gap_df['gap expt'] > 0.1) & (expt_gap_df['gap expt'] < 5) ]
@@ -30,11 +34,9 @@ expt_gap_df['type'] = ['conductor']*len(expt_gap_df)
 expt_gap_df.loc[semiconductors_expt.index, 'type'] = ['semiconductor']*len(semiconductors_expt)
 expt_gap_df.loc[insulators_expt.index, 'type'] = ['insulator']*len(insulators_expt)
 
-no_tl_pred_df = pd.read_csv(f'{path}/no_tl_expt_gap_pred_lv.csv')
 y_true_no_tl_lv = no_tl_pred_df.y_true
 y_pred_no_tl_lv = no_tl_pred_df.y_pred
 
-tl_pred_df = pd.read_csv(f'{path}/tl_expt_gap_pred_lv.csv')
 y_true_tl_lv = tl_pred_df.y_true
 y_pred_tl_lv = tl_pred_df.y_pred
 
