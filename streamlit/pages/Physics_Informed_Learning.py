@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.write("# Physics-Informed Learning ⚛️")
 st.write("## Background")
-st.write(r"Physics-informed learning is an ML approach where physical knowledge is embedded into the learning processes, usually via a differential equation. Most often, this is achieved by incorporating an additional loss into the training of a neural network, where the loss is defined by the differential equation. Here, I have adapted <a href='https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a' target='_blank'>this example on cooling</a> to solve the time-dependency of Newton's law of cooling at various environmental temperatures $T_{env}$:,", unsafe_allow_html=True)
+st.write(r"Physics-informed learning is an ML approach where physical knowledge is embedded into the learning processes, usually via a differential equation. Most often, this is achieved by incorporating an additional loss into the training of a neural network, where the loss is defined by the differential equation. Here, I have adapted <a href='https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a' target='_blank'>this example on cooling</a> to solve the time-dependency of Newton's law of cooling at various environmental temperatures $T_{env}$:", unsafe_allow_html=True)
 
 col1 = st.columns(3)
 with col1[1]:
