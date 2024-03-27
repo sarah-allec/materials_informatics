@@ -15,7 +15,7 @@ col1 = st.columns(3)
 with col1[1]:
     st.write(r"$$\frac{dT(t)}{dt}=r(T_{env}-T(t)),$$")
 
-st.write(r" where $T(t)$ is the temperature at time $t$, $T_{env}$ is the environmental or surrounding temperature, and $r$ is the cooling rate. In this example, $r$ is a parameter that the network will learn from the data, and $T_{env}$ is provided by the user.")
+st.write(r" where $T(t)$ is the temperature at time $t$, $T_{env}$ is the environmental or surrounding temperature, and $r$ is the cooling rate. In this example, $r$ is a parameter that the network will learn from the data, $T_{env}$ is provided by the user, and $T(t)$ is the output of the network.")
  
 st.write(r"To incorporate a physics-based loss into the network, we simply move all terms to one side of the equation:")
 
