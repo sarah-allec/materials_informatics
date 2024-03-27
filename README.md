@@ -28,12 +28,25 @@ Transfer learning is a machine learning (ML) approach where knowledge gained fro
 I currently only have code up for the LV approach - see <a href="notebooks/latent_variable.ipynb">here</a>  for the corresponding Jupyter notebook and <a href="https://materials-informatics.streamlit.app/Transfer_Learning">here</a> for an overview on my portfolio page.
 
 ### Active learning
-Active learning is a machine learning (ML) approach where the ML model predictions and uncertainties are used to decide what data point to evaluate next in a search space. In the context of materials and chemicals, active learning is often used to guide design and optimization. To decide what material or experiment to run next, we utilize :violet[acquisition functions] to either *explore* or *exploit* the search space. For example, if we seek to optimize a particular chemical property, we would utilize an *exploitive* :violet[acquisition function] that prioritizes compounds predicted to have property values close to our target value. On the other hand, if we want to *explore* the search space and diversify our training data, we would utilize an *explorative* :violet[acquisition function] that prioritizes compounds for which the model is most uncertain. For more information on :violet[acquisition functions], see <a href='https://tune.tidymodels.org/articles/acquisition_functions.html' target='_blank'>`here`</a> and <a href='https://ekamperi.github.io/machine%20learning/2021/06/11/acquisition-functions.html' target='_blank'>`here`</a>. 
+Active learning is a machine learning (ML) approach where the ML model predictions and uncertainties are used to decide what data point to evaluate next in a search space. In the context of materials and chemicals, active learning is often used to guide design and optimization. To decide what material or experiment to run next, we utilize acquisition functions to either *explore* or *exploit* the search space. For example, if we seek to optimize a particular chemical property, we would utilize an *exploitive* acquisition function that prioritizes compounds predicted to have property values close to our target value. On the other hand, if we want to *explore* the search space and diversify our training data, we would utilize an *explorative* acquisition function that prioritizes compounds for which the model is most uncertain. For more information on acquisition functions, see <a href='https://tune.tidymodels.org/articles/acquisition_functions.html' target='_blank'>`here`</a> and <a href='https://ekamperi.github.io/machine%20learning/2021/06/11/acquisition-functions.html' target='_blank'>`here`</a>. 
 
 See <a href="notebooks/active_learning.ipynb">here</a>  for the corresponding Jupyter notebook and <a href="https://materials-informatics.streamlit.app/Active_Learning">here</a> for an overview on my portfolio page.
 
 ## Usage
+### Running the notebooks
+To install the necessary packages for running the <a href="notebooks">Jupyter notebooks</a>, use `pip` to install the packages listed in <a href="requirements_notebooks.txt">`requirements_notebooks.txt`</a> :
 
 ```sh
-pip install -r requirements.txt
+pip install -r requirements_notebooks.txt
 ```
+
+Note that the notebooks often import data from <a href="data">data</a>, as well as modules from `python` scripts located in <a href="notebooks">notebooks</a>.
+
+### Running the `streamlit` app
+To install the necessary packages for running the <a href="streamlit">`streamlit` app</a>, use `pip` to install the packages listed in <a href="requirements_streamlit.txt">`requirements_streamlit.txt`</a> :
+
+```sh
+pip install -r requirements_streamlit.txt
+```
+
+Note that the app connects to a <a href="https://cloud.google.com/?hl=en">Google cloud</a> bucket to access data - the src code will need to be significantly modified in order to run the app locally, with or without <a href="https://cloud.google.com/?hl=en">Google cloud bucket</a>.
