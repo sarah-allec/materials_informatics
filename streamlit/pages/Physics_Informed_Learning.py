@@ -24,4 +24,7 @@ with col2[1]:
     st.write(r"$$g=\frac{dT(t)}{dt}-r(T_{env}-T(t)) = 0$$.")
 
 st.write(r"Now we can take the physics-based loss to simply be the difference between the predicted $g$ and $0$. The derivative term, $\frac{dT(t)}{dt}$ is easily obtained via the gradients computed during backpropagation.")
+
+st.write("## Ordinary neural network")
+st.write("Coming soon! 🚧")
 unauthenticated_menu()
